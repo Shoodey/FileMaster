@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -145,6 +145,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Own Service Providers...
+         */
+        Barryvdh\Debugbar\ServiceProvider::class,
+        AdamWathan\BootForms\BootFormsServiceProvider::class,
+
     ],
 
     /*
@@ -193,6 +199,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'BootForm' => AdamWathan\BootForms\Facades\BootForm::class,
 
     ],
 

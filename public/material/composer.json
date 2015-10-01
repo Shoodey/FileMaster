@@ -1,0 +1,6 @@
+{
+    "require": {
+        "barryvdh/laravel-debugbar": "^2.0",
+        "adamwathan/bootforms": "^0.7.0"
+    }
+}

@@ -2,10 +2,17 @@
 
 body{
   padding-top: 70px;
+  background-color: @white;
 }
 
 .navbar{
-  padding-right: 5px;
+  padding-right: 20px;
 }
 
-@primary: @blue;
+.form-control-wrapper .form-control:focus~.floating-label, .form-control-wrapper .form-control:not(.empty)~.floating-label {
+  top: -20px;
+  font-size: 16px;
+  opacity: 1;
+}
+
+@primary: @blue-grey;
